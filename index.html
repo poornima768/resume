@@ -1,70 +1,102 @@
-<html>
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="./style1.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poornima Sasankar | Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <p style="text-align: center; font-size: 30px">RESUME</p>
-    <pre>
-       <h2>POORNIMA SASANKAR</h2>
-        RESIDENT ADDRESS:- 
-        ADD :- Mahatma gandhi chowk
-        Gali no 5 gulabra chhindwara
-        Pin code : 480001
-        Mobile No : 9770266816
-        Email Id :  poornimasasankarv@gmail.com
-    </pre>
-    <hr />
-    <div style="background-color: rgb(117, 117, 238)">CAREER OBJECTIVE</div>
-    <br />
-    To work as a key player in a challenging and creative environment,
-
-    <div
-      style="
-        background-color: rgb(117, 117, 238);
-        margin-top: 10px;
-        margin-botton: 10px;
-      "
-    >
-      EDUCATION QUALIFICATION
-    </div>
-    <table>
-      <tr>
-        <th>COURSE</th>
-        <th>BATCH</th>
-        <th>UNIVERSITY</th>
-        <th>DIVISION</th>
-      </tr>
-      <tr>
-        <td>10th</td>
-        <td>2013</td>
-        <td>Mp board</td>
-        <td>1st division</td>
-      </tr>
-      <tr>
-        <td>12<sup>th</sup></td>
-        <td>2013</td>
-        <td>Mp board</td>
-        <td>1st division</td>
-      </tr>
-    </table>
-
-    <div style="background-color: rgb(117, 117, 238)">EXPERIENCE</div>
-    <ul>
-      <li>1 year Working Experienc in HUL</li>
-    </ul>
-    <div style="background-color: rgb(117, 117, 238)">PERSONAL DETAILS</div>
-    <pre>
+    <header>
+      <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+      <h1>POORNIMA SASANKAR</h1>
+      <p>Fresher</p>
+    </header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Certificate</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm POORNIMA SASANKAR  
+      </p>
+    </section>
+    <hr class="section-break" />
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
       <ul>
-<li>Name            : poornima sasankarv</li>
-<li>Father's Name   : Ashok sasankar</li>
-<li>Mother's Name   : poornima sasankarv</li>
-<li>Gender          : female</li>
-<li>dob             : alsdkjf</li>
+        <li>MS Word</li>
+        <li>MS Execl</li>
+        <li>Power Point</li>
+        <li>Tally</li>
       </ul>
-    </pre>
-    <div style="background-color: rgb(117, 117, 238)">DECLARATION</div>
-    <p>
-      I here by declare that all the above information provided by me is correct
-    </p>
+    </section>
+    <hr class="section-break" />
+    <section id="projects" class="projects">
+      <h2>Certificate</h2>
+      <div class="project-card">
+        <h3>BPO</h3>
+        <p>
+          3 Months Bussiness process outsoucing Course from Ambuja foundation. 
+        </p>
+      </div>
+      <div class="project-card">
+        <h3>Tally</h3>
+        <p>
+          3 Months Tally Course from Ambuja foundation. 
+        </p>
+      </div>
+     
+    </section>
+    <hr class="section-break" />
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>
+        If you'd like to work together or have any questions, feel free to reach
+        out!
+      </p>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          rows="4"
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2024 POORNIMA SASANKAR. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
